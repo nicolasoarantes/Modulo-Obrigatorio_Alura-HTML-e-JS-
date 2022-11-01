@@ -1,0 +1,51 @@
+
+<meta charset="UTF-8">
+
+<h3> 
+    Exercicio 09: Entendendo a fundo retorno de funções - 
+    <br>
+    <br>
+
+</h3>
+
+
+<script>
+
+    function pulaLinha (){
+        document.write ("<br>");
+        document.write ("<br>");
+
+    }
+
+    
+    function mostra(frase) {
+
+        document.write(frase);
+        pulaLinha();
+    }
+
+
+    function calculaImc(altura, peso) {
+
+        return peso / (altura * altura);
+    }
+    //A operacao acontece e é retornar porque quando chamamos o calculaImc(),
+    // a única instrução que temos dentro dele é o return.
+    //Quando este for devolver o resultado da função,
+    // avaliará a expressão peso / (altura * altura), e
+    // imprimirá o que dela resultar.
+
+    var imcNicolau = calculaImc(1.73, 74.5);
+    var imcRobertin = calculaImc(1.83, 87);
+    var totalImc = imcNicolau + imcRobertin
+
+//    mostra ( "A soma dos imc's de Nicolau e Robertin é: " + totalImc )
+
+//a funcao acima tambem pode ser demonstrada de uma maneira simples, tirando a necessidade das variaveis como : 
+    mostra ( "A soma dos imc's de Nicolau e Robertin é: " + ( calculaImc(1.73, 74.5) + calculaImc(1.73, 74.5) ) )
+
+    mostra (imcNicolau);
+    mostra (imcRobertin);
+
+
+</script>

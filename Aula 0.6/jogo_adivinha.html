@@ -1,0 +1,47 @@
+<meta charset="UTF-8">
+
+<h3> 
+    Exercicio 0.9: Jogo de adivinhação
+    <br>
+    <br>
+
+</h3>
+
+<script>
+
+    function pulaLinha() {
+
+        document.write("<br>");
+        document.write("<br>");
+}
+
+    function mostra(frase) {
+
+        document.write(frase);
+        pulaLinha();
+}
+
+var numeroPensado = Math.round(Math.random() * 10 );
+console.log(numeroPensado);
+alert ("Este é um jogo de advinhacao! Digite um numero na proxima mensagem e tente adivinhar qual foi o numero que pensamos através das dicas que virao: ")
+var chute = parseInt(prompt("Digite seu chute!"));
+
+if(chute == numeroPensado){
+    mostra("Voce acertou o chute! Noice :) ");
+
+} else {
+    mostra("Voce errou o chute! Tente denovo :)"+ " <br>" +  " O número pensado foi: " + " <br>" + numeroPensado);
+
+}
+
+//if(chute < 5 ){
+//    mostra("Voce errou o chute! O numero é um pouco mais alto...");
+//}
+
+//if(chute > 5 ){
+//    mostra("Voce errou o chute! O numero pode ser bem menor que isso...");
+
+//}
+
+
+</script>

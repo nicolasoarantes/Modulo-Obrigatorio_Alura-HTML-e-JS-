@@ -1,0 +1,57 @@
+<meta charset="UTF-8">
+
+<script>
+
+    function pulaLinha (){
+        document.write ("<br>");
+        document.write ("<br>");
+
+    }
+
+    
+    function mostra(frase) {
+
+        document.write(frase);
+        pulaLinha();
+    }
+
+ // Abaixo segue a funcao escrita de maneira nao eficiente: 
+ //
+ //   function calculaImc(altura1, peso1, altura2, peso2 ) {
+ //       var imc1= peso1 / ( altura1 * altura1 );
+ //       var imc2= peso2 /( altura2 * altura2);
+ //       var imcTotal= (imc1 + imc2 );
+ //       mostra ("A soma dos valores de Imc calculados é de: " + imcTotal );
+ //   }
+
+ //   calculaImc(1.73, 74.5, 1.83, 87);
+
+    function calculaImc(altura, peso) {
+
+        var imc = peso / (altura * altura);
+        return imc;
+        //A variável recebe a função de calcular e,
+        // ao final, deve devolver um resultado dentro
+        // da própria variável. 
+        //Só que em momento algum foi declarado na função que ela 
+        // deve devolver o valor de imc. Para fazê-lo utiliza-se a 
+        // palavra return, ou "retorna". Ele retornará o imc:
+
+        //Podemos pensar no calculaImc()
+        // como se fosse uma pessoa a quem estivéssemos
+        // solicitando que realizasse o cálculo do IMC. 
+        //A pessoa perguntaria a altura e o peso, ao que responderíamos
+        // com os dados do nosso exemplo, ou seja, 1.71 e 73.
+        //Ficaríamos esperando o resultado, dado para quem chama a
+        // função por meio da cláusula return.
+
+    }
+
+    var imcNicolau = calculaImc(1.73, 74.5);
+    var imcRobertin = calculaImc(1.83, 87);
+
+    mostra (imcNicolau);
+    mostra (imcRobertin);
+
+
+</script>

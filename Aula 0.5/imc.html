@@ -1,0 +1,43 @@
+<meta charset="UTF-8">
+
+
+<script>
+    function pulaLinha() {
+        document.write("<br>")
+        document.write("<br>")
+
+    }
+
+    function mostra(frase) {
+
+        document.write(frase);
+        pulaLinha();
+    }
+
+    function calculaImc(altura, peso) {
+    
+        var imc = peso / (altura * altura);
+        mostra ("O imc calculado é " + imc);
+    };
+
+//Lembrando que, para criar uma função, -
+// precisamos utilizar o function mais o nome, os parênteses e as chaves.
+
+calculaImc(1.73, 74.5);
+calculaImc(1.83, 87);
+// calculando imc sem ter que criar variaveis especificas, chamando funcao com dois parametros
+
+var pesoNicolau = 74.5;
+var alturaNicolau = 1.73;
+var imcNicolau = pesoNicolau/(alturaNicolau * alturaNicolau);
+mostra(" O imc de Nicolau é " + imcNicolau);
+
+var pesoRobertin = 87;
+var alturaRobertin = 1.83;
+var imcRobertin = pesoRobertin / ( alturaRobertin * alturaRobertin );
+mostra (" O imc de Robertin é " + imcRobertin );
+
+</script>
+
+
+

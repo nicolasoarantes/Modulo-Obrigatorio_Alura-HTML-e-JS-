@@ -1,0 +1,38 @@
+<meta charset="UTF-8">
+
+<script>
+alert("Row Row Fight The Power!!!");
+
+    function pulaLinha() {
+        document.write("<br><br>");
+
+        }
+//funcition server para chamar os comandos que estao contidos dentro da seccao sem precisar utilizar diferentes variaiveis para diferentes comandos.
+    function show(Text) {
+        document.write(Text);
+        pulaLinha();
+    }
+//Escolheremos um nome aleatório para inserir, por exemplo Text. Quando mostra() receber um parâmetro,
+// ele será enviado para dentro da variável Text. Ao chegar nessa instrução, o JS interpretará como 
+// se Tect fosse igual à frase que queremos exibir. Formamos uma funccao com um parametro.
+
+var ano = 2022;
+
+//document.write("Nicolau tem " + (ano - 2000) + " anos");
+show("Nicolau tem " + (ano - 2000) + " anos");
+
+//pulaLinha();
+
+//document.write("Robert tem " + (ano - 1996) + " anos");
+
+show("Robert tem " + (ano - 1996) + " anos");
+
+//pulaLinha();
+
+ano = 2030;
+
+//document.write("Leozin tera " + (ano - 1998) + " anos em 2030");
+
+show("Leozin tera " + (ano - 1998) + " anos em 2030");
+
+</script>

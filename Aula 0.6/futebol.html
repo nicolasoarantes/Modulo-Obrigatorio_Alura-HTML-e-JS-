@@ -1,0 +1,35 @@
+<meta charset="UTF-8">
+
+<h3>
+    Exercicio 01: Convertendo texto em números
+
+</h3>
+
+
+<script>
+
+function pulaLinha() {
+
+    document.write("<br>");
+    document.write("<br>");
+}
+
+function mostra(frase) {
+
+    document.write(frase);
+    pulaLinha();
+}
+
+var vitorias = parseInt(prompt("Digite o número de vitorias ja conquistadas pelo seu time: "));
+var empates = parseInt(prompt("Digite o número de empates que seu time já teve: "));
+//Detalhe: parseInt(), uma função existente no JavaScript, 
+// e preparada para receber um texto a ser convertido em número.
+//Necessita de ser utilizada quando se trata de numeros que sao recebidos 
+// através no da funcao prompt , pois esta converte os valeres recebidos em Strings, 
+// a menos que a funcao onde a variavel seja utilizada seja uma operacao de multiplicacao/divisao.
+
+var pontos = (vitorias * 3) + empates;
+
+mostra("Os pontos do seu time sao: " + pontos);
+
+</script>

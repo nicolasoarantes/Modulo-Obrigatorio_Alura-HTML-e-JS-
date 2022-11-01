@@ -1,0 +1,42 @@
+<meta charset="UTF-8">
+
+<h3>
+    Exercicio 05: Trabalhando com condições
+
+</h3>
+
+
+<script>
+
+function pulaLinha() {
+
+    document.write("<br>");
+    document.write("<br>");
+}
+
+function mostra(frase) {
+
+    document.write(frase);
+    pulaLinha();
+}
+
+var vitorias = parseInt(prompt("Digite o número de vitorias ja conquistadas pelo seu time: "));
+var empates = parseInt(prompt("Digite o número de empates que seu time já teve: "));
+
+var pontos = (vitorias * 3) + empates;
+
+mostra("Os pontos do seu time, de acordo com as infos digitadas, sao: " + pontos);
+
+if( pontos > 28 ) {
+    mostra ("Seu time está mais ON FIREEEE que no ano passado.");
+}
+
+if( pontos < 28 ){
+    mostra("Seu time está mais xoxo do que no ano passado.");
+}
+
+if ( pontos == 28 ){
+    mostra("Seu time ta la miesma cosa que no ano passado.");
+}
+
+</script>
