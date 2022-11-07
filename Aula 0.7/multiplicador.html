@@ -14,15 +14,50 @@
 
     <body>
         <div class="jetpackshark">
-            <h1 style="text-align: center; background-color:#1b67c3 ;">Sobre os Turbo Sharks</h1>
+            <h1 style="text-align: center; background-color:#1b67c3 ;"> Keep on swimming! Study Time</h1>
+            <p style="font-size: 20px "> <em>A missão é: <strong style="color:#c62545"> Finalizar o curso de JS e HTML! .</strong> </em> </p>
+            <p style="font-size: 20px "> <em>Segue abaixo o resultado do modulo que consta: </em> </p>
 
-            <p>Localizada no coração da cidade a <strong>Barbearia Alura</strong> traz para o mercado o que há de melhor para o seu cabelo e barba
-            . Fundada em 2019, a Barbearia Alura já é destaque na cidade e conquista novos clientes a cada dia.</p>
-        
-            <p style="font-size: 20px "> <em >Nossa missão é: <strong style="color:#c62545"> "Proporcionar auto-estima e qualidade de vida aos clientes".</strong> </em> </p>
-        
-            <p>Oferecemos profissionais experientes e antenados às mudanças no mundo da moda. 
-            O atendimento possui padrão de excelência e agilidade, garantindo qualidade e satisfação dos nossos clientesoi. </p>
+
+
+
+        <script>
+
+                function pulaLinha() {
+            
+                    document.write("<br>");
+                    document.write("<br>");
+            }
+            
+                function mostra(frase) {
+            
+                    document.write(frase);
+                    pulaLinha();
+            }
+            
+            var multiplier = 1;
+            //Trata-se do total++: ferramenta para incrementar 1 a variavel
+            //var total = 0;
+            //total++;COPIAR CÓDIGO
+            //Esta ferramenta equivale à sintaxe:
+            //total = total + 1;
+            for(var multiplier = 1; multiplier <= 10; multiplier = multiplier++) {
+            
+                mostra(7 * multiplier);
+            }
+            
+            mostra("Fim da tabuada de 7! Agora em inglës");
+
+
+            // Abaixo segue uma serie de modificacoes que tentei fazer para deixar minha pagina de resultados de estudos mais estilizadas, mas ainda nao sei mexer com manipulacao de dom e nogeral, implementar css com JS. Cometarios abaixos sao ignoraveis.
+
+           // mostra("<h1 style="text-align: center; background-color:#1b67c3 ;">Agora em ingles</h1>");
+           // mostra(" <p>Este é apenas um pequeno exemplo <strong>para demonstar</strong> o uso de css e js</p> ")
+           // mostra(" <p style="font-size: 20px "> <em>Minha missão é: <strong style="color:#c62545"> "Me tronar um programador,artista e amigo pika".</strong> </em> </p>")
+            // inside joke
+            
+            </script>
+
         </div>
         
     
@@ -35,29 +70,30 @@
 
 
 
-<script>
 
-    function pulaLinha() {
+// <script>
 
-        document.write("<br>");
-        document.write("<br>");
-}
+    //function pulaLinha() {
 
-    function mostra(frase) {
+      //  document.write("<br>");
+        //document.write("<br>");
+//}
 
-        document.write(frase);
-        pulaLinha();
-}
+  //  function mostra(frase) {
 
-var multiplier = 1;
+    //    document.write(frase);
+      //  pulaLinha();
+//}
 
-while(multiplier <= 10) {
+//var multiplier = 1;
 
-    mostra(7 * multiplier);
-    multiplier = multiplier + 1
-}
+//while(multiplier <= 10) {
 
-mostra("Agora em ingles");
+  //  mostra(7 * multiplier);
+    //multiplier = multiplier + 1
+//}
+
+//mostra("Agora em ingles");
 // inside joke
 
-</script>
+//</script>

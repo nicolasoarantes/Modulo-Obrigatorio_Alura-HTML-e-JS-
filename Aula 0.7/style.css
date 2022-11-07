@@ -1,0 +1,20 @@
+
+body {
+    background-color: #8fafd8;
+} 
+
+.jetpackshark {
+    min-height: 100vh;
+    width: 100%;
+    background-color: #8fafd8;
+    background-image: url(https://i.pinimg.com/originals/89/de/95/89de955f4093afe10f36d7a20e09269e.gif) ;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size:10%;
+    padding: 0 0%;
+
+}   
+
+p {
+    text-align: center;
+}
