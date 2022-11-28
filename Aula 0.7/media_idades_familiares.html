@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang "pt-br">
+<meta charset="UTF-8">
+
+<head>
+    <meta chraset+"UTF8-8">
+    <title>Turbo Sharks</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+
+    </style>
+
+</head>
+
+<body>
+    <div class="jetpackshark">
+        <h1 style="text-align: center; background-color:#1b67c3 ;"> Keep on swimming! Study Time</h1>
+        <p style="font-size: 20px "> <em>A missão é: <strong style="color:#c62545"> Finalizar o curso de JS e HTML!
+                    .</strong> </em> </p>
+        <p style="font-size: 20px "> <em>Segue abaixo o resultado do modulo que consta: </em> </p>
+
+        <script>
+
+            function pulaLinha() {
+
+                document.write("<br>");
+                document.write("<br>");
+
+            }
+
+            function mostra(frase) {
+
+                document.write(frase);
+                pulaLinha();
+
+            }
+            var totalFamiliares = parseInt(prompt("Quantidade de familiares?"));
+            var totalIdades = 0;
+            var numero = 1;
+            while (numero <= totalFamiliares) {
+                var idade = parseInt(prompt("Informe idade do familiar"));
+                totalIdades = totalIdades + idade;
+                numero++
+            }
+
+            var mediaDasIdades = totalIdades / totalFamiliares
+            mostra("A média das idades dos seus familiares é de " + mediaDasIdades + " anos");
+            mostra("FIM");
+
+
+        </script>
+
+
+    </div>
+
+
+
+</body>
+
+
+</html>
