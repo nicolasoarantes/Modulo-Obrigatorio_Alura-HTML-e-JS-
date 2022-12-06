@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang "pt-br">
+<meta charset="UTF-8">
+
+<head>
+    <meta chraset+"UTF8-8">
+    <title>Turbo Sharks</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+
+    </style>
+
+</head>
+
+<body>
+    <div class="jetpackshark">
+        
+        <h1 style="text-align: center; background-color:#1b67c3 ;"> Keep on swimming! <br> Study Time</h1>
+
+        <p style="font-size: 20px "> <em>A missão é: <strong style="color:#c62545"> Finalizar o curso de JS e HTML!
+                    .</strong> </em> </p>
+        <p style="font-size: 20px "> <em>Segue abaixo o resultado do modulo que consta: </em> </p>
+        <h4 style="text-align: center;"> 
+            Aula 0.7
+            <br>
+            Exercicio 17: Repeticao aninhadas
+            <br>
+            <br>      
+        </h4>    
+        <div style=" text-align:center; margin-top: 60px;">
+            
+            <script>
+
+                function pulaLinha() {
+                    document.write ("<br>") ;
+                }
+
+                function mostra(frase) {
+                    document.write(frase);
+                }
+
+                //mostra("**********");
+
+                // Para mostrar a linha acima, podemos usar o for e
+                // lembrando que o for() conta com três partes - a primeira
+                // é a variável de inicialização, a que será incrementada,
+                // a segunda é a condição para sabermos quando ele deve parar
+                // de repetir o que está em seu bloco, por fim, temos o incremento.
+                for(var linha = 1; linha <= 3; linha++){
+                    for(var coluna = 1; coluna <= 10; coluna++){
+                        mostra("*");
+                    }
+                        pulaLinha();
+                };
+
+            </script>
+
+
+
+            </div>  
+    </div>
+
+
+
+</body>
+
+
+</html>
