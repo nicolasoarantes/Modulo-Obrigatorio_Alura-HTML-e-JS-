@@ -14,60 +14,39 @@
 
 <body>
     <div class="jetpackshark">
-
+        
         <h1 style="text-align: center; background-color:#1b67c3 ;"> Keep on swimming! <br> Study Time</h1>
 
         <p style="font-size: 20px "> <em>A missão é: <strong style="color:#c62545"> Finalizar o curso de JS e HTML!
                     .</strong> </em> </p>
         <p style="font-size: 20px "> <em>Segue abaixo o resultado do modulo que consta: </em> </p>
-        <h4 style="text-align: center;">
-            Aula 0.1
+        <h4 style="text-align: center;"> 
+            Aula 08
             <br>
-            Exercicio 0.1 & 0.5: Campo de texto e botao / Melhorando a usabilidade
+            Exercicio 04: Exibindo em um alert o nome digitado.
             <br>
-            <br>
-        </h4>
+            <br>      
+        </h4>    
         <div style=" text-align:center; margin-top: 60px;">
-    
-            <input />
+            
+            <input/>
             <br>
             <br>
-            <button style="font-size: 10px; background-color:#1b67c3 ;">
-                Compare com meu Segredo
-            </button>
-
+            <button>Exibir texto digitado</button>
+            
             <script>
-                document.write("")
-                var segredo = Math.round(Math.random() * 10);
-
                 var input = document.querySelector("input");
-                input.focus();
-
                 
-            function verifica() {
-                
-
-                if (input.value == segredo) {
-
-                        alert("Você ACERTOU!");
-                    } else {
-
-                        alert("Você errou my friend, but try again!!");
-                    }
-
-                    input.value = "";
-                    input.focus();
-
+                function exibeTexto() {
+            
+                    alert(input.value);
                 }
+            
                 var button = document.querySelector("button");
-
-                button.onclick = verifica;
-
+                button.onclick = exibeTexto;
             </script>
 
-
-
-        </div>
+            </div>  
     </div>
 
 
